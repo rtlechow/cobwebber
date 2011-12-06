@@ -5,7 +5,7 @@
 // @include        http://github.com/*
 // ==/UserScript==
 
-var lastCommit = document.getElementsByClassName("relatize")[0].title;
+var lastCommit = document.getElementsByClassName("js-relative-date")[0].title;
 if (lastCommit && lastCommit.length > 0) {
   lastCommit = lastCommit.split(/[-: ]/);
   var lastCommitDate = new Date(lastCommit[0], lastCommit[1] - 1, lastCommit[2], lastCommit[3], lastCommit[4], lastCommit[5]);
